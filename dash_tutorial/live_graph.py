@@ -1,11 +1,8 @@
-import dash
-from dash.dependencies import Output, Input
-import dash_core_components as dcc
-import dash_html_components as html
+from dash import html, dash, dcc, Input, Output
+from plotly import graph_objs as go
 import plotly
-import random
-import plotly.graph_objs as go
 from collections import deque
+import random
 
 X = deque(maxlen=20)
 X.append(1)
